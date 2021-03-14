@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/control.js"></script>
+
+</head>
+
+<body>
+    <div id="menu">
+        <div class="cancel" id="cancel">
+            <i class="fas fa-times-circle"></i>
+        </div>
+        <div class="menuList center">
+
+            <ul class="">
+                <li class="list-btn">
+                    <a href="#" class="">
+                        <i class="fas fa-chart-bar"></i>Dashboard
+                    </a>
+                </li>
+                <li class="list-btn">
+                    <a href="#" class="">
+                        <i class="fas fa-suitcase"></i>Restaurants
+                    </a>
+                </li>
+                <li class="list-btn">
+                    <a href="" class="">
+                        <i class="fas fa-user-friends"></i>Customers
+                    </a>
+                </li>
+                <li class="list-btn">
+                    <a href="#" class="">
+                        <i class="far fa-envelope"></i>Campaigns
+                    </a>
+                </li>
+                <li class="list-btn">
+                    <a href="#" class="">
+                        <i class="fas fa-tag"></i>Tags&nbsp;Management
+                    </a>
+                </li>
+                <li class="list-btn">
+                    <a href="#" class="">
+                        <i class="fas fa-clone"></i>HTML&nbsp;Templates
+                    </a>
+                </li>
+                <li class="list-btn">
+                    <a href="#" class="">
+                        <i class="fas fa-paste"></i>Reservations
+                    </a>
+                </li>
+                <li class="list-btn">
+                    <a href="#" class="">
+                        <i class="fas fa-chart-pie"></i>Analysis
+                    </a>
+                </li>
+    
+    
+                <li class="list-btn">
+                    <a href="#" class="">
+                        <i class="fas fa-cog"></i>Setting
+                    </a>
+                </li>
+                <li class="list-btn">
+                    <a href="#" class="">
+                        <i class="fas fa-sign-out-alt"></i>Log Out
+                    </a>
+                </li>
+    
+            </ul>
+        </div>
+    </div>
+    <header class="navbar">
+        <!-- Navbar -->
+        <nav class="between">
+            <!-- Logo -->
+            <div class="navbar_logo p10 center">
+                <a href="#" class="center">
+                    <img src="./images/logo.png" alt="Logo" class="navbar_logo-img">
+                    Logo
+                </a>
+                <a class="navbar_ham" href="#" id="menuBtn">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+            <div class="navbar_list">
+                <ul class="center p10">
+                    <li class="list_icon">
+                        <a href="#" class="list_icon-search">
+                            <i class="fas fa-search icon"></i>
+                        </a>
+                        <a href="#" class="list_icon-bell">
+                            <i class="far fa-bell icon"></i>
+                        </a>
+                    </li>
+
+                    <li class="list_info xs-noshow">
+                        <h2>Jones Ferdinand</h2>
+                        <p class="list_info-title right">Admin</p>
+                    </li>
+
+                    <li class="list_avatar">
+                        <img src="./images/user.jpg" class="avatar" alt="userAvatar">
+                    </li>
+
+                    <li class="list_menu">
+                        <a href="#" class="list_icon-down" tabindex="1">
+                            <i class="fas fa-chevron-down icon"></i>
+                        </a>
+
+                        <div class="list_menu-box">
+                            <a href="#" class="menu_item start p10">
+                                <i class="fas fa-user-edit icon"></i>
+                                修改</a>
+                            <a href="#" class="menu_item start p10">
+                                <i class="fas fa-sign-out-alt icon"></i>
+                                logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Panel Left -->
+        <div class="main_left column xs-noshow">
+            <ul class="panel_main">
+                <li class="list-btn">
+                    <a href="#" class="">
+                        <i class="fas fa-chart-bar"></i>Dashboard
+                    </a>
+                </li>
+                <li class="list-btn">
+                    <a href="#" class="">
+                        <i class="fas fa-suitcase"></i>Restaurants
+                    </a>
+                </li>
+                <li class="list-btn">
+                    <a href="" class="">
+                        <i class="fas fa-user-friends"></i>Customers
+                    </a>
+                </li>
+                <li class="list-btn">
+                    <a href="#" class="">
+                        <i class="far fa-envelope"></i>Campaigns
+                    </a>
+                </li>
+                <li class="list-btn">
+                    <a href="#" class="">
+                        <i class="fas fa-tag"></i>Tags&nbsp;Management
+                    </a>
+                </li>
+                <li class="list-btn">
+                    <a href="#" class="">
+                        <i class="fas fa-clone"></i>HTML&nbsp;Templates
+                    </a>
+                </li>
+                <li class="list-btn">
+                    <a href="#" class="">
+                        <i class="fas fa-paste"></i>Reservations
+                    </a>
+                </li>
+                <li class="list-btn">
+                    <a href="#" class="">
+                        <i class="fas fa-chart-pie"></i>Analysis
+                    </a>
+                </li>
+
+            </ul>
+            <ul class="panel_user">
+                <li class="list-btn">
+                    <a href="#" class="">
+                        <i class="fas fa-cog"></i>Setting
+                    </a>
+                </li>
+                <li class="list-btn">
+                    <a href="#" class="">
+                        <i class="fas fa-sign-out-alt"></i>Log Out
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- Panel Right -->
+        <div class="main_right">
+            <!-- Filter -->
+            <ul class="tabs d-flex">
+                <li id="tabCus" class="tab active">
+                    <a href="#">Customers</a>
+                </li>
+                <li id="tabTa" class="tab">
+                    <a href="#">Target Lists</a>
+                </li>
+            </ul>
+            <div class="filters start xs-column">
+                <div class="filters_selector">
+                    <select name="main" id="main" class="select">
+                        <option value="1">ALL</option>
+                    </select>
+                    <label class="middle" for="main"><i class="fas fa-chevron-down icon"></i></label>
+                </div>
+                <div class="filters_input">
+                    <input type="text" name="search" placeholder="Search">
+                    <button class="btn filter_input-btn middle">
+                        <i class="fas fa-search icon"></i>
+                    </button>
+                </div>
+                <div class="filters_pause">
+                    <button class="btn filter_pause-btn">Filter</button>
+                </div>
+                <div class="filters_selector">
+                    <select name="second" class="select " id="second">
+                        <option value="restaurant"><span>Restaurants:</span>(2 selected)</option>
+                    </select>
+                    <label for="second" class="middle"><i class="fas fa-chevron-down"></i></label>
+                </div>
+            </div>
+            <!-- Table -->
+            <div class="data_table">
+                <div class="checkboxs start">
+                    <div class="center checkboxs_all">
+                        <input type='checkbox' class="checkbox" name="selectAll" id="selectAll">
+                        <label for="selectAll" class="">Select&nbsp;All</label>
+                    </div>
+                    <div class="checkboxs_result">
+                        235result
+                    </div>
+                    <button class="btn checkboxs_btn">
+                        <i class="fas fa-redo icon"></i>
+                    </button>
+                </div>
+                <div class="sorts">
+                    <div class="selector">
+                        <select name="sort" id="sort" class="select">
+                            <option value="lang">Sorting By Name(A-Z)</option>
+                            <option value="month">Sorting By Month(1~12)</option>
+                            <option value="date">Sorting By Date(1~31)</option>
+                        </select>
+                        <label for="sort"><i class="fas fa-chevron-down"></i></label>
+                    </div>
+
+                </div>
+                <div class="setting center">
+                    <i class="fas fa-cog icon"></i>
+                </div>
+                <!-- list -->
+                <div class="lists">
+
+                    <ul class="lists_all">
+                        <li class="lists_item start  xs-column">
+                            <div class="center xs-column">
+
+                                <input type='checkbox' name="item" class="checkbox">
+                                <img class="avatar" src="./images/user.jpg" alt=" ">
+                            </div>
+
+                            <div class="data_column">
+                                <div class="user_name">
+                                    <h5>Name&nbsp;Surmane
+                                        <span class="member p_color">
+                                            <i class="fas fa-star icon"></i>
+                                            Member
+                                        </span>
+                                    </h5>
+                                    <span>
+                                        <i class="fas fa-birthday-cake icon"></i>
+                                        18.02.1979
+                                    </span>
+                                </div>
+
+
+                            </div>
+
+                            <div class="data_column ">
+                                <div class="user_contact">
+                                    <h5 class="p_color xs-noshow">Contacts</h5>
+                                    <span>
+                                        <i class="fas fa-phone-alt icon"></i>
+                                        (00)000 0000
+                                    </span>
+                                    <span>
+                                        <i class="fas fa-envelope icon"></i>
+                                        email@email.com
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <div class="data_column">
+                                <div class="user_data between">
+                                    <h5>Average&nbsp;Spend:</h5>
+                                    <span class="p_color">$32.19</span>
+                                </div>
+                                <div class="user_data between">
+                                    <h5>Total&nbsp;Spend: </h5>
+                                    <span class="p_color">$345.45</span>
+                                </div>
+                                <div class="user_data between">
+                                    <h5>Last&nbsp;visit:</h5>
+                                    <span class="p_color">3 days ago</span>
+                                </div>
+                            </div>
+
+                            <div class="data_column tags">
+                                <span class="tag pr">
+                                    Subscribed
+                                </span>
+                                <span class="tag pr">
+                                    High&nbsp;Spender
+                                </span>
+                                <span class="tag pr">
+                                    VIP
+                                </span>
+                                <span class="tag sd">
+                                    +2
+                                </span>
+
+                            </div>
+
+                            <a href="#" id="edits" class="edits">
+                                <i class="fas fa-ellipsis-v icon"></i>
+                            </a>
+                            <div class="edit_box ">
+                                <a href="#" class="menu_item center">
+                                    編輯</a>
+                                <a href="#" class="menu_item center">
+                                    刪除</a>
+                            </div>
+                        </li>
+                        <li class="lists_item start  xs-column">
+                            <div class="center xs-column">
+
+                                <input type='checkbox' name="item" class="checkbox">
+                                <img class="avatar" src="./images/user.jpg" alt=" ">
+                            </div>
+
+                            <div class="data_column">
+                                <div class="user_name">
+                                    <h5>Name&nbsp;Surmane
+                                        <span class="member p_color">
+                                            <i class="fas fa-star icon"></i>
+                                            Member
+                                        </span>
+                                    </h5>
+                                    <span>
+                                        <i class="fas fa-birthday-cake icon"></i>
+                                        18.02.1979
+                                    </span>
+                                </div>
+
+
+                            </div>
+
+                            <div class="data_column ">
+                                <div class="user_contact">
+                                    <h5 class="p_color xs-noshow">Contacts</h5>
+                                    <span>
+                                        <i class="fas fa-phone-alt icon"></i>
+                                        (00)000 0000
+                                    </span>
+                                    <span>
+                                        <i class="fas fa-envelope icon"></i>
+                                        email@email.com
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <div class="data_column">
+                                <div class="user_data between">
+                                    <h5>Average&nbsp;Spend:</h5>
+                                    <span class="p_color">$32.19</span>
+                                </div>
+                                <div class="user_data between">
+                                    <h5>Total&nbsp;Spend: </h5>
+                                    <span class="p_color">$345.45</span>
+                                </div>
+                                <div class="user_data between">
+                                    <h5>Last&nbsp;visit:</h5>
+                                    <span class="p_color">3 days ago</span>
+                                </div>
+                            </div>
+
+                            <div class="data_column tags">
+                                <span class="tag pr">
+                                    Subscribed
+                                </span>
+                                <span class="tag pr">
+                                    High&nbsp;Spender
+                                </span>
+                                <span class="tag pr">
+                                    VIP
+                                </span>
+                                <span class="tag sd">
+                                    +2
+                                </span>
+
+                            </div>
+
+                            <a href="#" id="edits" class="edits">
+                                <i class="fas fa-ellipsis-v icon"></i>
+                            </a>
+                            <div class="edit_box ">
+                                <a href="#" class="menu_item center">
+                                    編輯</a>
+                                <a href="#" class="menu_item center">
+                                    刪除</a>
+                            </div>
+                        </li>
+                        <li class="lists_item start  xs-column">
+                            <div class="center xs-column">
+
+                                <input type='checkbox' name="item" class="checkbox">
+                                <img class="avatar" src="./images/user.jpg" alt=" ">
+                            </div>
+
+                            <div class="data_column">
+                                <div class="user_name">
+                                    <h5>Name&nbsp;Surmane
+                                        <span class="member p_color">
+                                            <i class="fas fa-star icon"></i>
+                                            Member
+                                        </span>
+                                    </h5>
+                                    <span>
+                                        <i class="fas fa-birthday-cake icon"></i>
+                                        18.02.1979
+                                    </span>
+                                </div>
+
+
+                            </div>
+
+                            <div class="data_column ">
+                                <div class="user_contact">
+                                    <h5 class="p_color xs-noshow">Contacts</h5>
+                                    <span>
+                                        <i class="fas fa-phone-alt icon"></i>
+                                        (00)000 0000
+                                    </span>
+                                    <span>
+                                        <i class="fas fa-envelope icon"></i>
+                                        email@email.com
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <div class="data_column">
+                                <div class="user_data between">
+                                    <h5>Average&nbsp;Spend:</h5>
+                                    <span class="p_color">$32.19</span>
+                                </div>
+                                <div class="user_data between">
+                                    <h5>Total&nbsp;Spend: </h5>
+                                    <span class="p_color">$345.45</span>
+                                </div>
+                                <div class="user_data between">
+                                    <h5>Last&nbsp;visit:</h5>
+                                    <span class="p_color">3 days ago</span>
+                                </div>
+                            </div>
+
+                            <div class="data_column tags">
+                                <span class="tag pr">
+                                    Subscribed
+                                </span>
+                                <span class="tag pr">
+                                    High&nbsp;Spender
+                                </span>
+                                <span class="tag pr">
+                                    VIP
+                                </span>
+                                <span class="tag sd">
+                                    +2
+                                </span>
+
+                            </div>
+
+                            <a href="#" id="edits" class="edits">
+                                <i class="fas fa-ellipsis-v icon"></i>
+                            </a>
+                            <div class="edit_box ">
+                                <a href="#" class="menu_item center">
+                                    編輯</a>
+                                <a href="#" class="menu_item center">
+                                    刪除</a>
+                            </div>
+                        </li>
+                        <li class="lists_item start  xs-column">
+                            <div class="center xs-column">
+
+                                <input type='checkbox' name="item" class="checkbox">
+                                <img class="avatar" src="./images/user.jpg" alt=" ">
+                            </div>
+
+                            <div class="data_column">
+                                <div class="user_name">
+                                    <h5>Name&nbsp;Surmane
+                                        <span class="member p_color">
+                                            <i class="fas fa-star icon"></i>
+                                            Member
+                                        </span>
+                                    </h5>
+                                    <span>
+                                        <i class="fas fa-birthday-cake icon"></i>
+                                        18.02.1979
+                                    </span>
+                                </div>
+
+
+                            </div>
+
+                            <div class="data_column ">
+                                <div class="user_contact">
+                                    <h5 class="p_color xs-noshow">Contacts</h5>
+                                    <span>
+                                        <i class="fas fa-phone-alt icon"></i>
+                                        (00)000 0000
+                                    </span>
+                                    <span>
+                                        <i class="fas fa-envelope icon"></i>
+                                        email@email.com
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <div class="data_column">
+                                <div class="user_data between">
+                                    <h5>Average&nbsp;Spend:</h5>
+                                    <span class="p_color">$32.19</span>
+                                </div>
+                                <div class="user_data between">
+                                    <h5>Total&nbsp;Spend: </h5>
+                                    <span class="p_color">$345.45</span>
+                                </div>
+                                <div class="user_data between">
+                                    <h5>Last&nbsp;visit:</h5>
+                                    <span class="p_color">3 days ago</span>
+                                </div>
+                            </div>
+
+                            <div class="data_column tags">
+                                <span class="tag pr">
+                                    Subscribed
+                                </span>
+                                <span class="tag pr">
+                                    High&nbsp;Spender
+                                </span>
+                                <span class="tag pr">
+                                    VIP
+                                </span>
+                                <span class="tag sd">
+                                    +2
+                                </span>
+
+                            </div>
+
+                            <a href="#" id="edits" class="edits">
+                                <i class="fas fa-ellipsis-v icon"></i>
+                            </a>
+                            <div class="edit_box ">
+                                <a href="#" class="menu_item center">
+                                    編輯</a>
+                                <a href="#" class="menu_item center">
+                                    刪除</a>
+                            </div>
+                        </li>
+                        <li class="lists_item start  xs-column">
+                            <div class="center xs-column">
+
+                                <input type='checkbox' name="item" class="checkbox">
+                                <img class="avatar" src="./images/user.jpg" alt=" ">
+                            </div>
+
+                            <div class="data_column">
+                                <div class="user_name">
+                                    <h5>Name&nbsp;Surmane
+                                        <span class="member p_color">
+                                            <i class="fas fa-star icon"></i>
+                                            Member
+                                        </span>
+                                    </h5>
+                                    <span>
+                                        <i class="fas fa-birthday-cake icon"></i>
+                                        18.02.1979
+                                    </span>
+                                </div>
+
+
+                            </div>
+
+                            <div class="data_column ">
+                                <div class="user_contact">
+                                    <h5 class="p_color xs-noshow">Contacts</h5>
+                                    <span>
+                                        <i class="fas fa-phone-alt icon"></i>
+                                        (00)000 0000
+                                    </span>
+                                    <span>
+                                        <i class="fas fa-envelope icon"></i>
+                                        email@email.com
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <div class="data_column">
+                                <div class="user_data between">
+                                    <h5>Average&nbsp;Spend:</h5>
+                                    <span class="p_color">$32.19</span>
+                                </div>
+                                <div class="user_data between">
+                                    <h5>Total&nbsp;Spend: </h5>
+                                    <span class="p_color">$345.45</span>
+                                </div>
+                                <div class="user_data between">
+                                    <h5>Last&nbsp;visit:</h5>
+                                    <span class="p_color">3 days ago</span>
+                                </div>
+                            </div>
+
+                            <div class="data_column tags">
+                                <span class="tag pr">
+                                    Subscribed
+                                </span>
+                                <span class="tag pr">
+                                    High&nbsp;Spender
+                                </span>
+                                <span class="tag pr">
+                                    VIP
+                                </span>
+                                <span class="tag sd">
+                                    +2
+                                </span>
+
+                            </div>
+
+                            <a href="#" id="edits" class="edits">
+                                <i class="fas fa-ellipsis-v icon"></i>
+                            </a>
+                            <div class="edit_box ">
+                                <a href="#" class="menu_item center">
+                                    編輯</a>
+                                <a href="#" class="menu_item center">
+                                    刪除</a>
+                            </div>
+                        </li>
+                        <li class="lists_item start  xs-column">
+                            <div class="center xs-column">
+
+                                <input type='checkbox' name="item" class="checkbox">
+                                <img class="avatar" src="./images/user.jpg" alt=" ">
+                            </div>
+
+                            <div class="data_column">
+                                <div class="user_name">
+                                    <h5>Name&nbsp;Surmane
+                                        <span class="member p_color">
+                                            <i class="fas fa-star icon"></i>
+                                            Member
+                                        </span>
+                                    </h5>
+                                    <span>
+                                        <i class="fas fa-birthday-cake icon"></i>
+                                        18.02.1979
+                                    </span>
+                                </div>
+
+
+                            </div>
+
+                            <div class="data_column ">
+                                <div class="user_contact">
+                                    <h5 class="p_color xs-noshow">Contacts</h5>
+                                    <span>
+                                        <i class="fas fa-phone-alt icon"></i>
+                                        (00)000 0000
+                                    </span>
+                                    <span>
+                                        <i class="fas fa-envelope icon"></i>
+                                        email@email.com
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <div class="data_column">
+                                <div class="user_data between">
+                                    <h5>Average&nbsp;Spend:</h5>
+                                    <span class="p_color">$32.19</span>
+                                </div>
+                                <div class="user_data between">
+                                    <h5>Total&nbsp;Spend: </h5>
+                                    <span class="p_color">$345.45</span>
+                                </div>
+                                <div class="user_data between">
+                                    <h5>Last&nbsp;visit:</h5>
+                                    <span class="p_color">3 days ago</span>
+                                </div>
+                            </div>
+
+                            <div class="data_column tags">
+                                <span class="tag pr">
+                                    Subscribed
+                                </span>
+                                <span class="tag pr">
+                                    High&nbsp;Spender
+                                </span>
+                                <span class="tag pr">
+                                    VIP
+                                </span>
+                                <span class="tag sd">
+                                    +2
+                                </span>
+
+                            </div>
+
+                            <a href="#" id="edits" class="edits">
+                                <i class="fas fa-ellipsis-v icon"></i>
+                            </a>
+                            <div class="edit_box ">
+                                <a href="#" class="menu_item center">
+                                    編輯</a>
+                                <a href="#" class="menu_item center">
+                                    刪除</a>
+                            </div>
+                        </li>
+                        <li class="lists_item start  xs-column">
+                            <div class="center xs-column">
+
+                                <input type='checkbox' name="item" class="checkbox">
+                                <img class="avatar" src="./images/user.jpg" alt=" ">
+                            </div>
+
+                            <div class="data_column">
+                                <div class="user_name">
+                                    <h5>Name&nbsp;Surmane
+                                        <span class="member p_color">
+                                            <i class="fas fa-star icon"></i>
+                                            Member
+                                        </span>
+                                    </h5>
+                                    <span>
+                                        <i class="fas fa-birthday-cake icon"></i>
+                                        18.02.1979
+                                    </span>
+                                </div>
+
+
+                            </div>
+
+                            <div class="data_column ">
+                                <div class="user_contact">
+                                    <h5 class="p_color xs-noshow">Contacts</h5>
+                                    <span>
+                                        <i class="fas fa-phone-alt icon"></i>
+                                        (00)000 0000
+                                    </span>
+                                    <span>
+                                        <i class="fas fa-envelope icon"></i>
+                                        email@email.com
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <div class="data_column">
+                                <div class="user_data between">
+                                    <h5>Average&nbsp;Spend:</h5>
+                                    <span class="p_color">$32.19</span>
+                                </div>
+                                <div class="user_data between">
+                                    <h5>Total&nbsp;Spend: </h5>
+                                    <span class="p_color">$345.45</span>
+                                </div>
+                                <div class="user_data between">
+                                    <h5>Last&nbsp;visit:</h5>
+                                    <span class="p_color">3 days ago</span>
+                                </div>
+                            </div>
+
+                            <div class="data_column tags">
+                                <span class="tag pr">
+                                    Subscribed
+                                </span>
+                                <span class="tag pr">
+                                    High&nbsp;Spender
+                                </span>
+                                <span class="tag pr">
+                                    VIP
+                                </span>
+                                <span class="tag sd">
+                                    +2
+                                </span>
+
+                            </div>
+
+                            <a href="#" id="edits" class="edits">
+                                <i class="fas fa-ellipsis-v icon"></i>
+                            </a>
+                            <div class="edit_box ">
+                                <a href="#" class="menu_item center">
+                                    編輯</a>
+                                <a href="#" class="menu_item center">
+                                    刪除</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
+<script>
+    let height = window.innerHeight;
+    window.addEventListener('resize', () => {
+        height = window.innerHeight;
+    });
+</script>
